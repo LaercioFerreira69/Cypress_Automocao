@@ -1,8 +1,11 @@
 import 'cypress-xpath';
 
+
+
 describe('Abrir navegador por link', () => {
     it('Abrir navegador no link especificado', () => {
-        // Acessar a página
+        
+        // Acessar a página    
         cy.visit('https://seubarriga.wcaquino.me/login'); 
 
         // Preencher os campos de login
@@ -23,7 +26,6 @@ describe('Abrir navegador por link', () => {
         cy.xpath('//*[@id="tabelaContas"]/tbody/tr[3]/td[2]/a[2]').click();
         cy.get('.alert').should('contain', 'Conta removida com sucesso!');
         cy.screenshot();
-
                 
     });
 });

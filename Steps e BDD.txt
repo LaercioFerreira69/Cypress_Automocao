@@ -1,0 +1,55 @@
+BDD
+//Funcionalidade: Acesso
+//1. Login
+// Cenário 1: Login com sucesso
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login e senha corretamente
+// Quando clica no botão de login
+// Então o sistema deve direcionar para a página inicial
+// E exibir uma mensagem de boas-vindas
+
+// Cenário 2: Email Invalido
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login e senha incorretamente
+// Quando clica no botão de login
+// Então o sistema deve exibir uma mensagem de erro
+
+// Cenário 3: Senha Invalida
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login incorreto e senha corretamente
+// Quando clica no botão de login
+// Então o sistema deve exibir uma mensagem de erro
+
+// Cenário 3: Email e Senha Invalidos
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login incorreto e senha incorretamente
+// Quando clica no botão de login
+// Então o sistema deve exibir uma mensagem de erro
+
+//Funcionalidade; Adição de conta
+//2. Adicionar Conta
+//Dado que estou na tela inicial
+//E clico em Contas
+//E depois em Adicionar
+//E clico no campo nome
+//E insiro o nome da conta no campo nome
+//Quando clico no botão Salvar
+//Então deve apresentar a mensagem de conta adicionada com sucesso.
+
+//Funcionalidade; Exclusão de Conta
+//3. Excluir Conta
+//Dado que estou na tela inicial
+//E clico em Contas
+//E depois em Listar
+//E clico no botão de exclusão(x)
+//Então deve apresentar a mensagem de conta removida com sucesso.
+
+//Funcionalidade; Exclusão de Conta
+//3. Editar Conta
+//Dado que estou na tela inicial
+//E clico em Contas
+//E depois em Listar
+//E clico no botão de edição
+//E efetuo a alteração no campo nome
+//Quando clico no botão Salvar
+//Então deve apresentar a mensagem de conta alterada com sucesso.
