@@ -6,14 +6,14 @@ describe('Login', () => {
         cy.get('input[name=123456]').type('  ')
         cy.get('.btn').click()
         cy.get('.alert').should('contain', 'Bem vindo')
-    
-});
+    });
     it('deve preencher login com email invalido', () => {
     
-});
+    });
     it('deve preencher login com senha invalida', () => {
         
     });
+});
 
 // Cenário 1: Login com sucesso
 // Dado que o usuário acessa a página de login do sistema
@@ -21,4 +21,15 @@ describe('Login', () => {
 // Quando clica no botão de login
 // Então o sistema deve direcionar para a página inicial
 // E exibir uma mensagem de boas-vindas
-        
+
+// Cenário 2: Email Invalido
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login e senha incorretamente
+// Quando clica no botão de login
+// Então o sistema deve exibir uma mensagem de erro
+
+// Cenário 2: Senha Invalida
+// Dado que o usuário acessa a página de login do sistema
+// E preenche os campos de login incorreto e senha corretamente
+// Quando clica no botão de login
+// Então o sistema deve exibir uma mensagem de erro
