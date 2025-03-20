@@ -1,7 +1,5 @@
 import 'cypress-xpath';
 
-
-
 describe('Abrir navegador por link', () => {
     it('Abrir navegador no link especificado', () => {
         
@@ -19,7 +17,7 @@ describe('Abrir navegador por link', () => {
         //Validar conta existe
         cy.xpath('//li[@class="dropdown"]').should('be.visible').click();
         cy.xpath('//li[@class="dropdown open"]//a[contains(text(),"Listar")]').click();
-        cy.get('table').should('contain', 'Teste Automação 5');
+        cy.get('table').should('contain', 'Testando Testando');
         
 
         // Excluir a conta selecionada
