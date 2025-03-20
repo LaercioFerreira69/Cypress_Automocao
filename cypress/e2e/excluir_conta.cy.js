@@ -17,8 +17,7 @@ describe('Abrir navegador por link', () => {
         //Validar conta existe
         cy.xpath('//li[@class="dropdown"]').should('be.visible').click();
         cy.xpath('//li[@class="dropdown open"]//a[contains(text(),"Listar")]').click();
-        cy.get('table').should('contain', 'Testando Testando');
-        
+        cy.get('table').should('contain', 'Testando Testando');        
 
         // Excluir a conta selecionada
         cy.xpath('//*[@id="tabelaContas"]/tbody/tr[3]/td[2]/a[2]').click();
